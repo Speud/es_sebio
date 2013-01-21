@@ -16,7 +16,9 @@
         <link rel="stylesheet" href="../css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-        <script src="../js/vendor/modernizr-2.6.1.min.js"></script>
+                <!--[if lt IE 9]>
+            <script src="../js/html5shiv.js"></script>
+        <![endif]-->    
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -169,26 +171,26 @@
                         <th class="prix">Prix</th>
                     </tr>   
                     <tr>
-                        <td><img src="../img/article/12.jpg" alt="Déodorant sans Parfum (Urtekram)" /></td>
-                        <td><a href="article.html" title="Déodorant sans Parfum (Urtekram)">Déodorant sans Parfum (Urtekram)</a></td>
-                        <td><span class="prixUnite">12</span> <sup>€</sup></td>
+                        <td class="picture"><img src="../img/article/12.jpg" alt="Déodorant sans Parfum (Urtekram)" /></td>
+                        <td class="desc"><a href="article.html" title="Déodorant sans Parfum (Urtekram)">Déodorant sans Parfum (Urtekram)</a></td>
+                        <td><span class="prixUnite">12</span>&nbsp;<sup>€</sup></td>
                         <td><input type="number" class="quantite" min="1" size="2" value="1" /></td>
-                        <td><span class="prix">12</span> <sup>€</sup></td>
+                        <td><span class="prix">12</span>&nbsp;<sup>€</sup></td>
                     </tr>
                     <tr>
-                        <td><img src="../img/article/2.jpg" alt="Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)" /></td>
-                        <td><a href="article.html" title="Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)">Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)</a></td>
-                        <td><span class="prixUnite">9,89</span> <sup>€</sup></td>
+                        <td class="picture"><img src="../img/article/2.jpg" alt="Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)" /></td>
+                        <td class="desc"><a href="article.html" title="Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)">Elixir 100 % huile de pépins de figue de Barbarie (Arc en Sels)</a></td>
+                        <td><span class="prixUnite">9,89</span>&nbsp;<sup>€</sup></td>
                         <td><input type="number" class="quantite" min="1" size="2" value="1" /></td>
-                        <td><span class="prix">9,89</span> <sup>€</sup></td>
+                        <td><span class="prix">9,89</span>&nbsp;<sup>€</sup></td>
                     </tr>
                     <tr class="prixColis">
                         <td colspan="4" class="right"><span class="etoile">*</span> Envoi du colis (par coliposte ou taxipost)</td>
-                        <td><strong >4,10</strong> <sup>€</sup></td>
+                        <td><strong >4,10</strong>&nbsp;<sup>€</sup></td>
                     </tr>
                     <tr class="prixTotal">
                         <td colspan="4" class="right">Prix total&nbsp;: </td>
-                        <td><strong>25,99</strong> <sup>€</sup></td>
+                        <td><strong>25,99</strong>&nbsp;<sup>€</sup></td>
                     </tr>
                     <tr id="promoLivraison">
                     </tr>
@@ -445,8 +447,8 @@
             <a href="www.es-designer.be" title="es-designer" id="designedBy">Designed by Emmanuel Samu</a>
         </footer>
 
+        <script src="../js/vendor/modernizr-2.6.1.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="../js/vendor/jquery-ui-1.9.2.min.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/editable.js"></script>
