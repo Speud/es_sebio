@@ -1092,8 +1092,8 @@ input[type="color"],
           -moz-transform: rotate(90deg);
           -webkit-transform: rotate(90deg);
           position: absolute;
-          top: -40px;
-          right: -34px;
+          top: -35px;
+          right: -33px;
           font-size: 39px;
           text-transform: uppercase;
           font-weight: bold;
@@ -1704,9 +1704,16 @@ footer {
     width: 95%;
   }
   
-  #fiche {
+  #fiche, #shop, #adresse {
     width: 66.6666%;
   }
+    #shop .unitPrice, #shop .priceUnit {
+        text-indent: -99999px;
+    }
+    #adresse .btn, #shop .btn {
+      padding: 4px 5px;
+      font-size: 0.8em;
+    }
 }
 
 @media all and (max-width: 710px) {
@@ -1798,7 +1805,12 @@ footer {
     .imgPayement {
       width: 180px
     }
-
+    #adress1 {
+      width: 100%;
+    }
+    #search-submit {
+      width: 40%;
+    }
     .menu {
       width: 100%;
     }
@@ -1847,7 +1859,7 @@ footer {
         right: 25px;
       }
 
-  #fiche {
+  #fiche, #shop, #adresse {
     width: 100%;
   }
 
@@ -1882,6 +1894,13 @@ footer {
 
   #adresse label {
     width: 90%;
+  }
+  .bandeau_text {
+    top: -23px;
+    right: -50px;
+  }
+  .priceBox {
+    bottom: 85px;
   }
  }
 
